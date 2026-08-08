@@ -1,0 +1,80 @@
+.admin-layout {
+  background-color: var(--bg-color);
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: #1e1e2d;
+  color: #fff;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.closed {
+  width: 0;
+}
+
+.sidebar-header {
+  height: var(--topbar-height);
+  padding: 0 1.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.sidebar-header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-nav {
+  padding: 1rem 0;
+}
+
+.nav-item {
+  padding: 0.875rem 1.5rem;
+  color: #9ea0b5;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: #fff;
+  background-color: rgba(255,255,255,0.05);
+  border-left: 3px solid var(--primary-color);
+}
+
+.topbar {
+  height: var(--topbar-height);
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 1.5rem;
+}
+
+.menu-btn {
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.menu-btn:hover {
+  color: var(--primary-color);
+}
+
+.logout-btn {
+  color: var(--danger-color);
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background: #fee2e2;
+}
+
+.page-content {
+  padding: 2rem;
+  overflow-y: auto;
+  height: calc(100vh - var(--topbar-height));
+}
